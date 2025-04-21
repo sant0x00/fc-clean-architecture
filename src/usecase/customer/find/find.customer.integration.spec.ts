@@ -23,7 +23,7 @@ describe("integration test find customer use case", () => {
     afterEach(async () => {
         await sequalize.close();
     });
-    
+
     it("should find a costumer", async () => {
         const costumerRepository = new CustomerRepository();
         const usecase = new FindCustomerUseCase(costumerRepository);

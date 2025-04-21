@@ -18,7 +18,7 @@ export default class FindCustomerUseCase {
                 street: customer.Address.street,
                 city: customer.Address._city,
                 number: customer.Address._number,
-                zip: customer.Address._zip,  
+                zip: customer.Address._zip,
             },
         };
     }
