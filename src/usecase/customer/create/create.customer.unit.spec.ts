@@ -50,6 +50,6 @@ describe("unit test create customer use case", () => {
         const customerRepository = MockRepository();
         const customerCreateUseCase = new CreateCustomerUseCase(customerRepository);
         input.address.street = "";
-        await expect(customerCreateUseCase.execute(input)).rejects.toThrowError("Street is required")
+        await expect(customerCreateUseCase.execute(input)).rejects.toThrowError("Street is required");
     })
 });
