@@ -3,7 +3,7 @@ import ProductFactory from "../../../domain/product/factory/product.factory";
 import ProductRepositoryInterface from "../../../domain/product/repository/product-repository.interface";
 import { CreateInputProductDTO, CreateOutputProductDTO } from "./create.product.dto";
 
-export class CreateProductUseCase {
+export default class CreateProductUseCase {
     private productRepository: ProductRepositoryInterface;
 
     constructor(productRepository: ProductRepositoryInterface) {

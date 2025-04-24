@@ -1,4 +1,4 @@
-import { CreateProductUseCase } from "./create.product.usecase";
+import CreateProductUseCase from "./create.product.usecase";
 
 const MockRepository = () => {
     return {
