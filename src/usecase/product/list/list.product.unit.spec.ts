@@ -1,5 +1,5 @@
 import Product from "../../../domain/product/entity/product"
-import { ListProductUseCase } from "./list.product.usecase"
+import ListProductUseCase from "./list.product.usecase"
 
 const productA = new Product("123", "Product A", 100)
 const productB = new Product("456", "Product B", 200)

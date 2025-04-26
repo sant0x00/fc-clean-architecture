@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize-typescript";
 import ProductRepository from "../../../infrastructure/product/repository/sequelize/product.repository";
-import { CreateProductUseCase } from "./create.product.usecase";
+import CreateProductUseCase from "./create.product.usecase";
 import ProductModel from "../../../infrastructure/product/repository/sequelize/product.model";
 
 const setup = () => {
