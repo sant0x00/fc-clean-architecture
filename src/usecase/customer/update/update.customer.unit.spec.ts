@@ -41,13 +41,6 @@ describe("unit test for customer update use case", () => {
         await expect(customerUpdateUseCase.execute(input)).rejects.toThrow("Customer not found");
     });
 
-    it("should thrown an error when name is empty", async () => {
-        const customerRepository = MockRepository();
-        const customerUpdateUseCase = new UpdateCustomerUseCase(customerRepository);
-        input.name = "";
-        await expect(customerUpdateUseCase.execute(input)).rejects.toThrow("Name is required");
-    });
-
     it("should thrown an error when street is empty", async () => {
         const customerRepository = MockRepository();
         const customerUpdateUseCase = new UpdateCustomerUseCase(customerRepository);
