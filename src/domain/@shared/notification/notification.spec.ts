@@ -49,11 +49,6 @@ describe("unit test for notification", () => {
             context: "context",
         };
         notification.addError(error);
-        expect(notification.getErrors()).toEqual([
-            {
-                context: "context",
-                message: "error message",
-            },
-        ]);
+        expect(notification.getErrors()).toEqual([error]);
     });
 })
