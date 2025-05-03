@@ -4,6 +4,9 @@ import ProductB from "./product-b";
 describe("Product unit tests", () => {
     it("should create a product", () => {
         const product = new Product("123", "Product 1", 100);
+
+        console.log(product);
+
         expect(product.id).toBe("123");
         expect(product.name).toBe("Product 1");
         expect(product.price).toBe(100);
